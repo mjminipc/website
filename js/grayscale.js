@@ -183,3 +183,23 @@ function init() {
         icon: image
     });
 }
+
+
+// Case color change
+var redCase = document.getElementById("redCase");
+var whiteCase = document.getElementById("whiteCase");
+var blackCase = document.getElementById("blackCase");
+
+var casePic1 = document.getElementById("casePic1");
+
+redCase.onclick = function() {
+	casePic1.setAttribute("src", "img/case-colors/red-case-1.png");
+};
+
+whiteCase.onclick = function() {
+	casePic1.setAttribute("src", "img/case-colors/white-case-1.png");
+};
+
+blackCase.onclick = function() {
+	casePic1.setAttribute("src", "img/case-colors/black-case-1.png");
+};
