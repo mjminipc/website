@@ -186,9 +186,9 @@ function init() {
 
 
 // Case color change
-var redCase = document.getElementById("redCase");
-var whiteCase = document.getElementById("whiteCase");
-var blackCase = document.getElementById("blackCase");
+var redCase = document.getElementById("color-red");
+var whiteCase = document.getElementById("color-silver");
+var blackCase = document.getElementById("color-black");
 
 var casePic1 = document.getElementById("casePic1");
 
@@ -203,3 +203,40 @@ whiteCase.onclick = function() {
 blackCase.onclick = function() {
 	casePic1.setAttribute("src", "img/case-colors/black-case-1.png");
 };
+
+
+
+
+$('#check_all').click(function() {
+	$('label[id^=label-]').removeClass('active', true);
+	$('label[id=label-ram2]').addClass('active', true);
+	$('label[id=label-cpu2]').addClass('active', true);
+	$('label[id=label-gpu1]').addClass('active', true);
+	$('label[id=label-ssd2]').addClass('active', true);
+});
+
+function calcscore(){
+    var score = 0;
+    $(".calc:checked").each(function(){
+        score+=parseInt($(this).val());
+    });
+	$("p[name=sum]").text(score);
+}
+$().ready(function(){
+    $(".calc").change(function(){
+        calcscore()
+    });
+});
+
+function powerscore(){
+    var power = 0;
+    $(".calc:checked").each(function(){
+        power+=parseInt($(this).attr('unit_power'));
+    });
+	$("p[name=power]").text(power);
+}
+$().ready(function(){
+    $(".calc").change(function(){
+        powerscore()
+    });
+});

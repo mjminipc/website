@@ -9,20 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>xtractd | Silent MiniPC's</title>
+    <title>dunder/joweiss - custom mini PCs</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto|Open+Sans:300,400,600" rel="stylesheet">
-<!--
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
--->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
+
 
     <!-- Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -61,14 +59,11 @@
 			        <li>
                         <a class="page-scroll" href="#features"><span>Features</span></a>
                     </li>
-					<li>
-                        <a class="page-scroll" href="#api"><span>Powerful API</span></a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#contact"><span>Contact</span></a>
                     </li>
 					<li>
-						<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-signup-top btn-lg navbar-custom navbar-fixed-top btn2">Sign Up</a>
+						<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-signup-top btn-lg navbar-custom navbar-fixed-top btn2"><span class="network-name">Sign Up</span></a>
 					</li>
                 </ul>
             </div>
@@ -232,6 +227,7 @@
 			
 			
 			
+	
 			
 			
 			
@@ -243,57 +239,206 @@
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-				<div class="col-lg-12">
-					<form>
-					<div class="col-md-3">
-					Pick Your Color: 
-					</div>
-					<div class="col-md-9">
-						<span><input type="radio" name="color" value="white" id="whiteCase">White</span>
-						<span><input type="radio" name="color" value="black" id="blackCase">Black</span>
-						<span><input type="radio" name="color" value="red" id="redCase" checked>Red</span>
-					</div>
-					<div class="col-md-12 text-center">
-					<img id="casePic1" src="img/case-colors/red-case-1.png">Picture #1 Picture #2 Picture #3 Picture #4 Picture #5
-					</div>
-					<div class="col-md-4 text-center">
-						<p class="intro-text">Simple</p>
-						<div class="col-md-12">
-							<span></span>
-							<span></span>
-						</div>	
-					</div>
-					<div class="col-md-4 text-center">
-					Best Offer
-					</div>
-					<div class="col-md-4 text-center">
-					Standard
-					</div>
-					</form> 
-				</div>
-			</div>
+
 		</div>
     </section>
+	
+	
+	<section class="container content-section text-center" style="padding-top: 20px; padding-bottom: 10px;">
+        <div class="row">
+			<div class="col-lg-10 col-lg-offset-1">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+				
+				<div class="col-md-2">
+				
+					<p>Pick Color</p>
+					<form>
+						<fieldset id="color-pick">
+							<label for="color-black">
+							<input class="black calc" type="radio" name="color-pick" id="color-black" value="0"><span></span>
+							</label>
+
+							<label for="color-silver">
+							<input class="silver calc" type="radio" name="color-pick" id="color-silver" value="0"><span></span>
+							</label>
+
+							<label for="color-red">
+							<input class="red calc" type="radio" name="color-pick" id="color-red" value="0" checked><span></span>
+							</label>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-12 text-center">
+					<img id="casePic1" src="img/case-colors/red-case-1.png">
+					</div>			
+				</div>
+				
+				<div class="col-md-6">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn radijas2">
+							<button class= class="calc" type="checkbox" id="check_all"> Keyboard
+						</label>
+						
+					</div>
+					
+					<div class="col-md-12 options">						
+						<div class="col-md-2">
+						RAM
+						</div>
+						<div class="col-md-10">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn radijas" id="label-ram1" value="100">
+								<input class="calc" type="radio" name="ram" id="ram1" value="100" unit_power="500"> 16 GB
+								</label>
+								<label class="btn radijas" id="label-ram2" value="200">
+								<input class="calc" type="radio" name="ram" id="ram2" value="200" unit_power="500"> 32 GB
+								</label>
+								<label class="btn radijas" id="label-ram3" value="350">
+								<input class="calc" type="radio" name="ram" id="ram3" value="350" unit_power="500"> 64 GB
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 options">
+						<div class="col-md-2">
+						CPU
+						</div>
+						<div class="col-md-10">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn radijas" id="label-cpu1">
+								<input class="calc" type="radio" name="cpu" id="cpu1" value="200"> i5-7500
+								</label>
+								<label class="btn radijas" id="label-cpu2">
+								<input class="calc" type="radio" name="cpu" id="cpu2" value="250"> i7-7700T
+								</label>
+								<label class="btn radijas" id="label-cpu3">
+								<input class="calc" type="radio" name="cpu" id="cpu3" value="350"> i7-7700K
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 options">
+						<div class="col-md-2">
+						Graphics
+						</div>
+						<div class="col-md-10">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn radijas2" id="label-gpu1">
+								<input class="calc" type="radio" name="gpu" id="gpu1" value="0"> Integrated Iris
+								</label>
+								<label class="btn radijas2" id="label-gpu2">
+								<input class="calc" type="radio" name="gpu" id="gpu2" value="200"> nVidia Quadro
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 options">
+						<div class="col-md-2">
+						SSD
+						</div>
+						<div class="col-md-10">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn radijas" id="label-ssd1">
+								<input class="calc" type="radio" name="ssd" id="ssd1" value="80"> Option 1
+								</label>
+								<label class="btn radijas" id="label-ssd2">
+								<input class="calc" type="radio" name="ssd" id="ssd2" value="150"> Option 1
+								</label>
+								<label class="btn radijas" id="label-ssd3">
+								<input class="calc" type="radio" name="ssd" id="ssd3" value="240"> Option 1
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 options">
+						<div class="col-md-2">
+						Peripherals
+						</div>
+						<div class="col-md-10">
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn radijas2" id="label-mouse1">
+								<input class="calc" type="checkbox" name="mouse" id="mouse1" value="25"> Mouse
+								</label>
+								<label class="btn radijas2" id="label-keyboard1">
+								<input class="calc" type="checkbox" name="keyboard" id="keyboard1" value="20" > Keyboard
+								</label>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 options">
+					<div class="price_holder">
+						<div class="col-md-6 options">
+						<p style="text-align: left;" class="total_price">Total Price: </p>
+						</div>
+						<div class="col-md-6 options">
+						<p style="text-align: left;" class="total_price" name="sum">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 options">
+					<div class="price_holder">
+						<div class="col-md-6 options">
+						<p style="text-align: left;" class="total_price">Power Index: </p>
+						</div>
+						<div class="col-md-6 options">
+						<p style="text-align: left;" class="total_price" name="power">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 options">
+					<div class="feature-block">
+						<div class="col-lg-3">
+							<p class="text-left stats-header">Delivering</p>
+							<p class="feature-info text-center zero-margin">
+							<span class="stats-number"style="background-color: #673ab7;">1,000,000</span>
+							<p class="text-left stats-header">trux per month</p>
+							</p>
+						</div>
+						<div class="col-lg-3">
+							<p class="text-left stats-header">Physical presence in </p>
+							<p class="feature-info text-center zero-margin">
+							<span class="stats-number" style="background-color: #9c27b0;">3</span>
+							<p class="text-left stats-header">countries </p>
+							</p>
+						</div>
+						<div class="col-lg-3">
+							<p class="text-left stats-header">Tracking of</p>
+							<p class="feature-info text-center zero-margin">
+							<span class="stats-number" style="background-color: #e91e63;">180,000</span>
+							<p class="text-left stats-header">products</p>
+							</p>
+						</div>
+						<div class="col-lg-3">
+							<p class="text-left stats-header zero-margin">Monthly</p>
+							<p class="feature-info text-center">
+							<span class="stats-number" style="background-color: #e51c23;">52,000,000</span>
+							</p>
+						</div>						
+					</div>
+				</div>
+				</div>
+			</div>
+        </div>
+    </section>	
+			
+	
+	
 	<!-- Free Trial -->
     <section class="container content-section text-center" style="padding-top: 20px; padding-bottom: 10px;">
         <div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="col-md-12 col-xs-12 col-sm-3">
 					<span style="float: left; line-height: 30px; font-size: 15px;"><h3 class="zero-margin">Why not sign up for a free trial?</h3>
-					No obligation. No strings attached. We're confident that you'll love our data.</span>
+					No obligation. No strings attached.</span>
 					<ul class="list-inline banner-social-buttons text-right">
 						<li>
 							<a href="" class="btn btn-signup btn-lg" style="line-height: 30px;"><span class="network-name">Sign Up for Free Trial</span></a>
 						</li>
 						<li>
-							<a href="" class="btn btn-explore btn-lg" style="line-height: 30px;"><span class="network-name">API Documentation</span></a>
+							<a href="" class="btn btn-explore btn-lg" style="line-height: 30px;"><span class="network-name">Documentation</span></a>
 						</li>
 					</ul>
 				</div>
@@ -301,111 +446,7 @@
 			</div>
         </div>
     </section>	
-	<section id="api" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-				<div class="col-lg-10 col-lg-offset-1">
-					<div class="col-md-9 col-xs-12 col-sm-12">
-						<div class="col-md-12 col-xs-12 col-sm-12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin-bottom:20px;">
-						<h4 class="text-center" style="margin: 0;">Search Engine API</h4>
-						<img src="img/supported-engines.png" style="margin-bottom: 20px;">
-						</div>
-						<div class="col-md-4 col-xs-12 col-sm-12">
-							<div class="feature-block">
-								<h4 class="text-center">SERP</h4>
-								<div class="icon-box">
-									<i class="fa fa-search available-api-icon"></i>
-								</div>
-								<p class="feature-info text-center">
-								Our API is extremely easy to use and well documented. Our API returns well formed and easy to read JSON results to be handled by your backend or even your frontend application framework.<br>
-								<a href="" style="float: right; text-decoration: underline; color: #fff; padding-top: 10px;">Learn more...</a>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-12 col-sm-12">
-							<div class="feature-block">
-								<h4 class="text-center">Ranking Data</h4>
-								<div class="icon-box api-feature">
-									<i class="fa fa-list-ol available-api-icon"></i>
-								</div>
-								<p class="feature-info text-center">
-								All our search results are provided in real time. At the moment of your request we will start up a browser in the country of destination. Our browser will fetch and return your results.<br>
-								<a href="" style="float: right; text-decoration: underline; color: #fff; padding-top: 10px;">Learn more...</a>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-12 col-sm-12">
-							<div class="feature-block">
-								<h4 class="text-center">Keyword Data</h4>
-								<div class="icon-box">
-									<i class="fa fa-paragraph available-api-icon"></i>
-								</div>
-								<p class="feature-info text-center">
-								SERP Results need to be 100% accurate. That is why we use real browsers to generate the most accurate search results. All results are verified and 100% accurate.<br>
-								<a href="" style="float: right; text-decoration: underline; color: #fff; padding-top: 10px;">Learn more...</a>
-								</p>
-							</div>
-						</div>		
-					</div>
-					<div class="col-md-3 col-xs-12 col-sm-12">
-						<div class="col-md-12 col-xs-12 col-sm-12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); margin-bottom:20px;">
-						<h4 class="text-center" style="margin: 0;">Retail Pricing API</h4>
-						<img src="img/retail-engines.png" style="margin-bottom: 20px;">
-						</div>
-						<div class="col-md-12 col-xs-12 col-sm-12">
-							<div class="feature-block">
-								<h4 class="text-center">Pricing Data</h4>
-								<div class="icon-box">
-									<i class="fa fa-shopping-cart available-api-icon"></i>
-								</div>
-								<p class="feature-info text-center">
-								SERP Results need to be 100% accurate. That is why we use real browsers to generate the most accurate search results. All results are verified and 100% accurate.<br>
-								<a href="" style="float: right; text-decoration: underline; color: #fff; padding-top: 10px;">Learn more...</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
-    </section>	
-	<section class="container content-section text-center" style="padding-top: 20px; padding-bottom: 10px;">
-        <div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<div class="col-md-12 col-xs-12 col-sm-12">
-					<div class="feature-block">
-						<div class="col-lg-3">
-							<p class="text-left stats-header">Delivering</p>
-							<p class="feature-info text-center zero-margin">
-							<span class="stats-number"style="background-color: #673ab7;">121,000,000</span>
-							<p class="text-left stats-header">SERPs per month</p>
-							</p>
-						</div>
-						<div class="col-lg-3">
-							<p class="text-left stats-header">Physical presence in </p>
-							<p class="feature-info text-center zero-margin">
-							<span class="stats-number" style="background-color: #9c27b0;">124</span>
-							<p class="text-left stats-header">countries </p>
-							</p>
-						</div>
-						<div class="col-lg-3">
-							<p class="text-left stats-header">Tracking prices of</p>
-							<p class="feature-info text-center zero-margin">
-							<span class="stats-number" style="background-color: #e91e63;">180,000</span>
-							<p class="text-left stats-header">products every day</p>
-							</p>
-						</div>
-						<div class="col-lg-3">
-							<p class="text-left stats-header zero-margin">Monthly SERPs</p>
-							<p class="feature-info text-center">
-							<span class="stats-number" style="background-color: #e51c23;">52,000,000</span>
-							</p>
-						</div>						
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>	
+		
 	<section id="contact" class="container content-section text-center contact-background">
 		<div class="col-lg-6 col-lg-offset-3">
 			<div class="title">
@@ -427,34 +468,8 @@
 				</div>
 			</form>	
 		</div>
-		<div class="col-lg-6 col-lg-offset-3">
-			<div class="col-lg-4 footer-holder">
-				<p>
-				APIs<br>
-				<span>
-				<a href="" style="color: #fff; padding-top: 10px;">SERP API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Ranking Data API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Keyword Data API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Retail Pricing API</a>
-				</span>
-				</p>
-			</div>
-			<div class="col-lg-4 footer-holder">
-				<p>
-				General Information<br>
-				<span>
-				<a href="" style="color: #fff; padding-top: 10px;">SERP API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Ranking Data API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Keyword Data API</a><br>
-				<a href="" style="color: #fff; padding-top: 10px;">Retail Pricing API</a>
-				</span>
-				</p>
-			</div>
-		</div>
 	</section>	
-   
-    <!-- Map Section -->
-    <div id="map"></div>
+
 
     <!-- Footer -->
     <footer>
