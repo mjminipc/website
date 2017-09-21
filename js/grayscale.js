@@ -207,12 +207,20 @@ blackCase.onclick = function() {
 
 
 
-$('#check_all').click(function() {
+$('label[id=option1]').click(function() {
 	$('label[id^=label-]').removeClass('active', true);
 	$('label[id=label-ram2]').addClass('active', true);
 	$('label[id=label-cpu2]').addClass('active', true);
 	$('label[id=label-gpu1]').addClass('active', true);
 	$('label[id=label-ssd2]').addClass('active', true);
+});
+
+$('label[id=option2]').click(function() {
+	$('label[id^=label-]').removeClass('active', true);
+	$('label[id=label-ram3]').addClass('active', true);
+	$('label[id=label-cpu1]').addClass('active', true);
+	$('label[id=label-gpu2]').addClass('active', true);
+	$('label[id=label-ssd3]').addClass('active', true);
 });
 
 function calcscore(){
@@ -221,6 +229,7 @@ function calcscore(){
         score+=parseInt($(this).val());
     });
 	$("p[name=sum]").text(score);
+	$("p[name=power]").text(score/2);
 }
 $().ready(function(){
     $(".calc").change(function(){
@@ -228,6 +237,9 @@ $().ready(function(){
     });
 });
 
+
+
+/*
 function powerscore(){
     var power = 0;
     $(".calc:checked").each(function(){
@@ -240,3 +252,4 @@ $().ready(function(){
         powerscore()
     });
 });
+*/
