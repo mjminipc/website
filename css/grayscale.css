@@ -174,7 +174,6 @@ a:focus {
 .intro .intro-body .intro-text {
   text-align: center;
   font-size: 18px;
-  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .intro {
@@ -188,6 +187,7 @@ a:focus {
 	text-align: center;
   }
   .intro .intro-body .intro-text {
+	padding: 45px 0 20px 0;
 	font-size: 22px;
     text-align: center;
     line-height: 29px;
@@ -313,31 +313,31 @@ a:focus {
   background-color: #42DCA3;
 }
 .btn-signup {
-  border: 1px solid #cddc39;
-  color: #cddc39;
-  background-color: transparent;
-  
+	padding: 15px 45px;
+	background-color: #2ecc71;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
 }
 .btn-signup:hover,
 .btn-signup:focus {
-  border: 1px solid #cddc39;
-  outline: none;
-  color: black;
-  background-color: #cddc39;
+  background-color: #73dea0;
+  color: #fff;
 }
 .btn-explore {
-  border: 1px solid #00bcd4;
-  color: #00bcd4;
-  background-color: transparent;
+	color: #fff;
+	background-color: #00bcd4;
+	padding: 15px 45px;
+	border-radius: 5px;
+	font-size: 20px;
 }
 .btn-explore:hover,
 .btn-explore:focus,
 .btn-signup-top:hover,
 .btn-signup-top:focus  {
-  border: 1px solid #00bcd4;
   outline: none;
-  color: black;
-  background-color: #00bcd4;
+  color: #fff;
+  background-color: #42d4e7;
 }
 .btn-signup-top {
   border: 1px solid #fdfdfd;
