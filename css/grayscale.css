@@ -770,7 +770,37 @@ input[type="radio"] {
 }
 
 
+#clockdiv{
+	color: #000;
+	display: inline-block;
+	text-align: center;
+}
 
+
+#clockdiv > div{
+	float: left;
+	width: 35px;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	float: left;
+    width: 0px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.smalltext{
+	float: left;
+	padding-top: 15px;
+	font-size: 10px;
+}
+
+.navbar-collapse {
+	padding: 15px;
+	font-weight: 500;
+	color: #9b59b6;
+}	
 
 
 
