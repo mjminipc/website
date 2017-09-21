@@ -177,9 +177,8 @@ a:focus {
 }
 @media (min-width: 768px) {
   .intro {
-    height: 70%;
-	padding-top: 155px; 
-	padding-bottom: 100px;
+	padding-top: 55px; 
+	padding-bottom: 75px;
   }
   .intro .intro-body .brand-heading {
     font-size: 50px;
@@ -774,12 +773,11 @@ input[type="radio"] {
 	color: #000;
 	display: inline-block;
 	text-align: center;
+	font-size: 28px;
 }
-
-
 #clockdiv > div{
 	float: left;
-	width: 35px;
+	width: 50px;
 	display: inline-block;
 }
 
@@ -792,7 +790,7 @@ input[type="radio"] {
 
 .smalltext{
 	float: left;
-	padding-top: 15px;
+    padding-top: 30px;
 	font-size: 10px;
 }
 
